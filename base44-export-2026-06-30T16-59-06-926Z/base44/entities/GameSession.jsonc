@@ -1,0 +1,75 @@
+{
+  "name": "GameSession",
+  "type": "object",
+  "properties": {
+    "settings": {
+      "type": "object",
+      "description": "Snapshot of settings used during this session"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ended_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sequences_completed": {
+      "type": "number",
+      "description": "Number of sequences successfully completed"
+    },
+    "max_sequence_length": {
+      "type": "number"
+    },
+    "min_sequence_length": {
+      "type": "number"
+    },
+    "answer_times": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "Array of answer times per square in ms"
+    },
+    "sequence_lengths_reached": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "location_correct": {
+      "type": "number"
+    },
+    "location_total": {
+      "type": "number"
+    },
+    "colour_correct": {
+      "type": "number"
+    },
+    "colour_total": {
+      "type": "number"
+    },
+    "text_correct": {
+      "type": "number"
+    },
+    "text_total": {
+      "type": "number"
+    },
+    "correctness_by_position": {
+      "type": "object",
+      "description": "Map of position index to {correct, total}"
+    },
+    "game_over_reason": {
+      "type": "string",
+      "enum": [
+        "completed",
+        "failed",
+        "quit"
+      ]
+    }
+  },
+  "required": [
+    "settings",
+    "started_at"
+  ]
+}

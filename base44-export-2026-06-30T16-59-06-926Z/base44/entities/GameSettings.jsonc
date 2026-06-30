@@ -1,0 +1,105 @@
+{
+  "name": "GameSettings",
+  "type": "object",
+  "properties": {
+    "grid_rows": {
+      "type": "number",
+      "default": 4
+    },
+    "grid_cols": {
+      "type": "number",
+      "default": 4
+    },
+    "starting_sequence_length": {
+      "type": "number",
+      "default": 1
+    },
+    "fixed_sequence_length": {
+      "type": "boolean",
+      "default": false
+    },
+    "max_sequence_length": {
+      "type": "number",
+      "default": 10
+    },
+    "max_squares_shown": {
+      "type": "number",
+      "default": 1
+    },
+    "multi_square_delay": {
+      "type": "number",
+      "default": 50
+    },
+    "fail_threshold_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "fail_threshold": {
+      "type": "number",
+      "default": 0
+    },
+    "text_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "text_capitals": {
+      "type": "boolean",
+      "default": false
+    },
+    "text_length_min": {
+      "type": "number",
+      "default": 1
+    },
+    "text_length_max": {
+      "type": "number",
+      "default": 1
+    },
+    "text_numbers": {
+      "type": "boolean",
+      "default": false
+    },
+    "text_numbers_only": {
+      "type": "boolean",
+      "default": false
+    },
+    "colour_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "available_colours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "#a855f7"
+      ]
+    },
+    "answer_type": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "default": "A"
+    },
+    "answer_type_c_depth_min": {
+      "type": "number",
+      "default": 1
+    },
+    "answer_type_c_depth_max": {
+      "type": "number",
+      "default": 1
+    },
+    "flash_time": {
+      "type": "number",
+      "default": 1000
+    },
+    "waiting_time": {
+      "type": "number",
+      "default": 500
+    }
+  },
+  "required": []
+}
